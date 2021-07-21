@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+body
+{
+    font-family: 'Raleway', arial, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 25px;
+}
+a
+{
+    text-decoration: none;
+    color: initial;
+}
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header div
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+.header--logo
+{
+    margin-bottom: 15px;
+    width: 100px;
+}
+.header--presentation__bold
+{
+    font-weight: bold;
+    margin-inline-end: 0em;
+
+}
+.header--presentation
+{
+    font-size: 0.7rem;
+    margin-block-start: -0.5rem;
+}
+.onglet
+{
+    display: flex;
+    flex-basis: 70%;
+    justify-content: flex-end;
+}
+.onglet ul li
+{
+    display: inline;
+    list-style: none;
+    margin-block-start: 0;;
+    
+}
+.onglet ul a
+{
+    text-decoration: none; 
+    color: #0065FC;
+}
+.onglet--btn
+{
+    width:100px;
+    border:none;
+    background: none;
+    padding-top: 18px;
+    margin: -15px -3px 0;
+}
+.onglet--btn:hover
+{
+    border-top: 1px solid #0065FC;
+    
+}
+.filtres
+{
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+}
+.filtres--btn
+{
+    font-weight: 600;
+    padding: 0 13px 0 0;
+    background: none;
+    border:3px solid #F2F2F2;
+    border-radius: 80px;
+}
+.fas
+{
+    color: #0065FC;
+    margin-left: 0;
+    padding: 0.6rem;
+    background: #DEEBFF;
+    border-radius: 80px;
+}
+.fa-map-marker-alt
+{
+    color: black;
+    background: #F2F2F2;
+    border-radius: 10px 0 0 10px ;
+    padding-bottom: 10px;
+}
+.search--bar
+{
+    border: 1px solid #F2F2F2;
+    height: 32px ;
+}
+.search--btn
+{
+    background: #0065FC;
+    color: white;
+    border: none;
+    height: 32px;
+    border-radius: 0 10px 10px 0;
+    font-size: 0.7rem;
+
+}
+.info
+{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+.fa-info
+{
+    background: none;
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px ;
+    padding: 8px;
+}
+.hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+    border-radius: 15px;
+    flex-basis: auto;
+    margin-right: 50px;
+}
+.hebergements div
+{
+    width: 100%;
+    padding-left: 30px;
+
+}
+.tuiles
+{
+    background: white;
+    display: inline-flex;
+    flex-direction: column;
+    border: 4px solid white;
+    border-radius: 15px;
+    margin: 20px;
+    
+    
+}
+.tuiles--name
+{
+    margin-bottom: 5px;
+}
+.tuiles--img
+{
+    
+    border-radius: 17px 17px 0 0;
+    height: 140px;
+    width: 280px;
+}
+.tuiles--legende
+{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    font-size: smaller;
+    margin:0 7%;
+    padding: 6px 0;
+
+}
+.fa-star
+{
+    background: none;
+    padding:0 0; 
+}
+.tuiles--note
+{
+    display: flex;
+    margin-top: 5px;
+}
+section
+{
+    display: flex;
+}
+.popular
+{
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    flex-basis:  40%;
+    border-radius: 15px;
+    
+
+}
+.popular p
+{
+    padding-left: 45px;
+}
+.tuiles__horizontal
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    background: white;
+    border-radius: 15px;
+    padding: 5px;
+    height:120px;
+    width: 325px;
+    box-shadow: 5px 5px 5px black;
+}
+.tuiles--img__horizontal
+{
+    height:auto;
+    width:120px;
+    border-radius: 15px  0px 0 15px;
+}
+.tuiles--note__horizontal
+{
+    padding-top: 20px;
+}
