@@ -4,7 +4,7 @@ body
     font-family: 'Raleway', arial, sans-serif;
     font-weight: normal;
     font-size: 1rem;
-    margin: 25px;
+    margin: 0 2%;
 }
 a
 {
@@ -14,27 +14,33 @@ a
 header
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
-header div
+.presentation
 {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
 }
+.header--div_logo
+{
+    display: flex;
+    flex-basis: 70%;
+}
 .header--logo
 {
-    margin-bottom: 15px;
     width: 100px;
 }
-.header--presentation__bold
+.presentation--text__bold
 {
-    font-weight: bold;
+    font-size: x-large;
     margin-inline-end: 0em;
 
 }
-.header--presentation
+.presentation--text
 {
     font-size: 0.7rem;
     margin-block-start: -0.5rem;
@@ -42,33 +48,17 @@ header div
 .onglet
 {
     display: flex;
-    flex-basis: 70%;
     justify-content: flex-end;
+    margin-top: 25px;
 }
-.onglet ul li
-{
-    display: inline;
-    list-style: none;
-    margin-block-start: 0;;
-    
-}
-.onglet ul a
+.onglet a
 {
     text-decoration: none; 
     color: #0065FC;
 }
-.onglet--btn
+.onglet:hover
 {
-    width:100px;
-    border:none;
-    background: none;
-    padding-top: 18px;
-    margin: -15px -3px 0;
-}
-.onglet--btn:hover
-{
-    border-top: 1px solid #0065FC;
-    
+    border-top: 1px solid #0065FC;  
 }
 .filtres
 {
@@ -112,7 +102,6 @@ header div
     height: 32px;
     border-radius: 0 10px 10px 0;
     font-size: 0.7rem;
-
 }
 .info
 {
@@ -133,16 +122,15 @@ header div
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background: #F2F2F2;
     border-radius: 15px;
-    flex-basis: auto;
-    margin-right: 50px;
+    flex-basis: 70%;
 }
-.hebergements div
+.hebergements--titre
 {
     width: 100%;
     padding-left: 30px;
-
 }
 .tuiles
 {
@@ -151,9 +139,12 @@ header div
     flex-direction: column;
     border: 4px solid white;
     border-radius: 15px;
-    margin: 20px;
-    
-    
+    margin: 17px;
+    box-shadow: 2px 2px 2px #F2F2F2;
+}
+img:hover
+{
+    filter: brightness(50%);
 }
 .tuiles--name
 {
@@ -172,9 +163,6 @@ header div
     flex-direction: column;
     background: white;
     font-size: smaller;
-    margin:0 7%;
-    padding: 6px 0;
-
 }
 .fa-star
 {
@@ -184,21 +172,23 @@ header div
 .tuiles--note
 {
     display: flex;
-    margin-top: 5px;
+    padding-left: 0;
 }
 section
 {
     display: flex;
+    justify-content: space-between;
+    
 }
 .popular
 {
     display: flex;
     flex-direction: column;
     background: #F2F2F2;
-    flex-basis:  40%;
+    flex-basis:  27%;
     border-radius: 15px;
-    
-
+    align-items: center;
+    justify-content: space-around;
 }
 .popular p
 {
@@ -214,7 +204,8 @@ section
     padding: 5px;
     height:120px;
     width: 325px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 2px 2px 2px #F2F2F2;
+    
 }
 .tuiles--img__horizontal
 {
@@ -222,7 +213,95 @@ section
     width:120px;
     border-radius: 15px  0px 0 15px;
 }
-.tuiles--note__horizontal
+.section__activite
 {
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.activites
+{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    height: 420px;
+}
+.activites--titre
+{
+    display: flex;
+    flex-basis: 100%;
+}
+.tuiles--activites
+{
+    width: 310px;
+    flex-basis: 40%;
+    border-radius: 15px ;
+    box-shadow: 2px 2px 2px #F2F2F2;
+    overflow: hidden;
+    margin-inline-start: 0;
+}
+.tuiles--activites__grande
+{
+    flex-basis: 100%;
+}
+.tuiles--img__grande
+{
+    margin: -30px 0 0 -170px;
+    height: 390px;
+}
+.tuiles--activites__moyenne
+{
+    
+    flex-basis: 45%;
+}
+.tuiles--img__moyenne
+{
+    margin:-181px 0 0  -43px;
+}
+.tuiles--activites__moyenne div
+{
+    width: auto;
+    height:180px;
+    overflow: hidden;
+}
+.tuiles--activites__petite
+{
+    flex-basis: 35% ;
+}
+.tuiles--img__petite
+{
+    height:170px;
+    width: 330px;
+}
+.tuiles--div__petite
+{
+    overflow: hidden;
+    height: 130px;
+    width: 330px;
+}
+.tuiles--div
+{
+    overflow: hidden;
+    width: 330px;
+    height: 152px;
+}
+.tuiles--img__standard
+{
+    width: 330px;
+    height: 200px;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    background: #F2F2F2;
+    margin: 20px -40px -40px -40px;
+}
+footer div
+{
+    display: flex;
+    flex-direction: column;
 }
