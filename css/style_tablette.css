@@ -1,0 +1,56 @@
+body
+{
+    margin: 0;
+}
+.header--div_logo
+{
+    display: flex;
+    flex-basis: 50%;
+}
+section
+{
+    flex-direction: column;
+}
+.popular
+{
+    order: 1;
+    align-items: stretch;
+}
+.tuiles__horizontal
+{
+    width: initial;
+    padding: 10px 0px 0px 10px;
+    margin: 1% 4%;
+    justify-content: start;
+}
+.hebergements
+{
+    order: 2;
+    background: none;
+    justify-content: space-evenly;
+}
+.activites
+{
+    flex-wrap: nowrap;
+}
+.tuiles--activites
+{
+    height: 10rem;
+    flex-basis: unset;
+}
+.tuiles--activites__grande
+{
+    flex-basis: unset;
+}
+.tuiles--img
+{
+    object-fit: cover;
+    
+}
+.tuiles-activites--img
+{
+    width: unset;
+    height: 150px;
+    object-fit: cover;
+}
+/*Enlever les div autour des img
