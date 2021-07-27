@@ -52,7 +52,6 @@ header
 section
     {
         flex-direction: column;
-        width: available;
     }
 .popular
     {
