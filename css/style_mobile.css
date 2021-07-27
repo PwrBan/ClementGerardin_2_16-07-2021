@@ -1,3 +1,7 @@
+body
+{
+    margin: 0;
+}
 header
 {
     margin-top: 4%;
@@ -8,26 +12,26 @@ header
     {
         margin:0;
     }
-    .onglet--btn-inscription
+.onglet--btn-inscription
     {
         order: 2;
-        flex-basis: 50%;
+        flex-basis: 40%;
     }
-    .onglet--btn-activites
+.onglet--btn-activites
     {
         order: 4;
         flex-basis: 50%;
         border-bottom: 2px solid #F2F2F2;
         justify-content: center;
     }
-    .onglet--btn-hebergements
+.onglet--btn-hebergements
     {
         order:3;
         flex-basis: 50%;
         border-bottom: 2px solid #F2F2F2;
         justify-content: center;
     }
-    .header--div_logo
+.header--div_logo
     {
         order: 1;
         flex-basis: 50%;
@@ -37,37 +41,54 @@ header
     {
         flex-direction: column;
     }
-    .hebergements
+.hebergements
     {
         background: none;
         justify-content: center;
         order: 2;
         margin: 0;
     }
-    section
+section
     {
-        flex-wrap: wrap;
         flex-direction: column;
         width: available;
     }
-    .popular
+.popular
     {
         border-radius: 0;
         order: 1;
     }
-    .activites
+.activites
     {
-    align-items: flex-end;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 0%;
+    width: 95%;
     }
-    footer
+footer
     {
-        flex-direction: column;
-        margin: 0;
+    flex-direction: column;
+    margin: 0;
     }
-    .search
+.search
     {
-        display: flex;
-        justify-content: center;
-        flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    flex-basis: 80%;
     }
+.tuiles--activites
+    {
+    width: 90%;
+    }
+.tuiles--img
+{
+    width: auto;
+    height: 10em;
+    object-fit: cover;
+     object-position: 0 -32px;
+}
+.tuiles
+{
+    
+}
