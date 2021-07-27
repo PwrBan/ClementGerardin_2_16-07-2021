@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media='(max-width: 427px)'href="css/style_mobile.css">
-    <link rel="stylesheet" media='(min-width:427px) and (max-width: 769px)'href="css/style_tablette.css">
+    <link rel="stylesheet" media='(max-width: 427px)' href="css/style_mobile.css">
+    <link rel="stylesheet" media='(min-width:427px) and (max-width: 769px)' href="css/style_tablette.css">
     <title>Reservia</title>
 </head>
 
@@ -35,9 +35,9 @@
                     <aside class='filtres'>
                         <p>Filtres</p>
                             <button class='filtres--btn'><i class="fas fa-money-bill-wave-alt"></i> Economique</button>
-                            <button class='filtres--btn'><i class="fas fa-child "></i></div> Familial</button>
-                            <button class='filtres--btn'><i class="fas fa-heart  "></i></div> Romantique</button>
-                            <button class='filtres--btn'><i class="fas fa-dog "></i></div> Animaux autorisés</button>
+                            <button class='filtres--btn'><i class="fas fa-child "></i> Familial</button>
+                            <button class='filtres--btn'><i class="fas fa-heart  "></i> Romantique</button>
+                            <button class='filtres--btn'><i class="fas fa-dog "></i> Animaux autorisés</button>
                     </aside>        
                 </nav>
               
@@ -48,7 +48,7 @@
         
         <section>
             <div class='hebergements'>
-                <span><h2>Hébergements à Marseille</h2></span>
+                <div class='section--name'><h2>Hébergements à Marseille</h2></div>
                 <a href="#">
                     <article class='tuiles'>
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberges de la cannebiere" class='tuiles--img'>
@@ -81,10 +81,10 @@
                 </a>
                 <a href="#">
                     <article class='tuiles'>
-                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberges de la cannebiere" class='tuiles--img'>
+                        <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberges de la cannebiere" class='tuiles--img'>
                         <div class='tuiles--legende'>
                             <h2 class='tuiles--name'>Hôtel de la mer</h2>
-                            Nuit a partir de 25€
+                            
                             <div class='tuiles--note'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                     </article>
@@ -109,18 +109,20 @@
                         </div>
                     </article>
                 </a>
-                <span><h2>Afficher plus</h2></span>   
+                <div class='section--name'><h2>Afficher plus</h2></div>   
             </div>    
            
 
             <div class='popular'>
-                <span><h2>Les plus populaires</h2><i class="fas fa-chart-line fa-xl"></i></span>
+                <div class='section--name'><h2>Les plus populaires</h2><i class="fas fa-chart-line fa-xl"></i></div>
                 <a href="#">
                     <article class='tuiles__horizontal'>
                         <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class='tuiles--img__horizontal '>
                         <div class="tuiles--legende">
+                            <div>
                             <h2 class='tuiles--name'>Hôtel le soleil du matin</h2>
-                            Nuit a partir de 128€
+                            <em>Nuit a partir de 128€</em>
+                            </div>
                             <div class='tuiles--note tuiles--note__horizontal'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                         
@@ -130,29 +132,32 @@
                     <article class='tuiles__horizontal'>
                         <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class='tuiles--img__horizontal '>
                         <div class="tuiles--legende">
+                            <div>
                             <h2 class='tuiles--name'>Au coeur de l'eau Chambres d'hôtes</h2>
-                            Nuit a partir de 71€
+                            <em>Nuit a partir de 71€</em>
+                            </div>
                             <div class='tuiles--note tuiles--note__horizontal'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                         
                     </article>
                 </a>
                 <a href="#">
-                    <articl class='tuiles__horizontal'>
+                    <article  class='tuiles__horizontal'>
                         <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class='tuiles--img__horizontal '>
                         <div class="tuiles--legende">
+                        <div>
                             <h2 class='tuiles--name'>Hôtel Tout bleu et Blanc</h2>
-                            Nuit a partir de 68€
-                            <div class='tuiles--note tuiles--note__horizontal'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <em>Nuit a partir de 68€</em>
                         </div>
-                        
+                            <div class='tuiles--note tuiles--note__horizontal'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>    
                     </article>
                 </a>
             </div>
         </section>
 
         <section class='section__activite'>
-            <h2>Activités à Marseille</h2><br>
+            <div class='section--name'><h2>Activités à Marseille</h2></div>
             <div class='activites'>
                 
                 <article class=' tuiles tuiles--activites tuiles--activites__grande'>
@@ -184,7 +189,7 @@
                 </article>
 
                 <article class='tuiles tuiles--activites'>
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"alt="" class='tuiles--img tuiles--img__standard'>
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class='tuiles--img tuiles--img__standard'>
                     <div class='tuiles--legende_activite'>
                         <h2>Notre-Dame-de-la-Garde</h2>
                     </div>
