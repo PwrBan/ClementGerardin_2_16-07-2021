@@ -7,6 +7,10 @@ body
     display: flex;
     flex-basis: 50%;
 }
+.onglet
+{
+    padding:1rem;
+}
 section
 {
     flex-direction: column;
@@ -28,15 +32,24 @@ section
     order: 2;
     background: none;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 .activites
 {
     flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+}
+.tuiles
+{
+    flex: auto;
+    width: auto;
 }
 .tuiles--activites
 {
     height: 10rem;
     flex-basis: unset;
+    width: 80%;
 }
 .tuiles--activites__grande
 {
