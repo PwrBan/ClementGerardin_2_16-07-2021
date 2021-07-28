@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media='(max-width: 427px)' href="css/style_mobile.css">
     <link rel="stylesheet" media='(min-width:427px) and (max-width: 769px)' href="css/style_tablette.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
     <title>Reservia</title>
 </head>
 
@@ -30,21 +33,21 @@
 
                 <nav >
                     <div class="search">
-                    <i class="fas fa-map-marker-alt fa-xs"></i><input type="search" name="search--city" class="search--bar"><input type="submit" value="Rechercher" class='search--btn'>
+                    <i class="fas fa-map-marker-alt fa-xs"></i><input type="search" name="search--city" class="search--bar" placeholder="Marseille, France"><input type="submit" value="Rechercher" class='search--btn'>
                     </div>
-                    <aside class='filtres'>
-                        <p>Filtres</p>
+                    <div class='filtres'>
+                        <strong>Filtres</strong>
                             <button class='filtres--btn'><i class="fas fa-money-bill-wave-alt"></i> Economique</button>
                             <button class='filtres--btn'><i class="fas fa-child "></i> Familial</button>
                             <button class='filtres--btn'><i class="fas fa-heart  "></i> Romantique</button>
                             <button class='filtres--btn'><i class="fas fa-dog "></i> Animaux autorisés</button>
-                    </aside>        
+                    </div>        
                 </nav>
               
         
-                <aside class='info'>
+                <div class='info'>
                     <i class="fas fa-info fa-xs"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </aside>
+                </div>
         
         <section>
             <div class='hebergements'>
@@ -84,7 +87,7 @@
                         <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberges de la cannebiere" class='tuiles--img'>
                         <div class='tuiles--legende'>
                             <h2 class='tuiles--name'>Hôtel de la mer</h2>
-                            
+                            Nuit a partir de 25€
                             <div class='tuiles--note'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                     </article>
@@ -109,7 +112,7 @@
                         </div>
                     </article>
                 </a>
-                <div class='section--name'><h2>Afficher plus</h2></div>   
+                <a href="#">Afficher plus</a>   
             </div>    
            
 
@@ -120,7 +123,7 @@
                         <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class='tuiles--img__horizontal '>
                         <div class="tuiles--legende">
                             <div>
-                            <h2 class='tuiles--name'>Hôtel le soleil du matin</h2>
+                                <h2 class='tuiles--name'>Hôtel le soleil du matin</h2>
                             <em>Nuit a partir de 128€</em>
                             </div>
                             <div class='tuiles--note tuiles--note__horizontal'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -133,7 +136,7 @@
                         <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class='tuiles--img__horizontal '>
                         <div class="tuiles--legende">
                             <div>
-                            <h2 class='tuiles--name'>Au coeur de l'eau Chambres d'hôtes</h2>
+                                <h2 class='tuiles--name'>Au coeur de l'eau Chambres d'hôtes</h2>
                             <em>Nuit a partir de 71€</em>
                             </div>
                             <div class='tuiles--note tuiles--note__horizontal'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -159,47 +162,64 @@
         <section class='section__activite'>
             <div class='section--name'><h2>Activités à Marseille</h2></div>
             <div class='activites'>
+
+                    <article class=' tuiles tuiles--activites tuiles--activites__grande'>
+                        <a href="#">
+                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class='tuiles-activites--img tuiles--img__grande'>
+                        <div class='tuiles--legende_activite'>
+                        <h2>Vieux port</h2>
+                        </div>
+                        </a>
+                    </article>
                 
-                <article class=' tuiles tuiles--activites tuiles--activites__grande'>
-                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class='tuiles--img tuiles--img__grande'>
-                    <div class='tuiles--legende_activite'>
-                       <h2>Vieux port</h2>
-                    </div>
-                </article>
 
                 <article class='tuiles tuiles--activites tuiles--activites__moyenne'>
-                    <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class='tuiles--img tuiles--img__moyenne'>
+                    <a href="#">
+                    <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class='tuiles-activites--img tuiles--img__moyenne'>
                     <div class='tuiles--legende_activite'>
                         <h2>Fort de pomégues</h2>
                     </div>
+                    </a>
                 </article>
-
+                
+                
                 <article class=' tuiles tuiles--activites tuiles--activites__petite'>
-                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class='tuiles--img tuiles--img__petite'>
+                    <a href="#">
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class='tuiles-activites--img tuiles--img__petite'>
                     <div class='tuiles--legende_activite'>
                         <h2>îles du Frioul</h2>
                     </div>
+                    </a>
                 </article>
-               
+            
+            
                 <article class='tuiles tuiles--activites tuiles--activites__grande'>
-                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class='tuiles--img tuiles--img__grande'>
+                    <a href="#">
+                    <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class='tuiles-activites--img tuiles--img__grande'>
                     <div class='tuiles--legende_activite'>
                        <h2>Parc National des Calanques</h2>
                     </div>
+                    </a>
                 </article>
-
+            
+            
                 <article class='tuiles tuiles--activites'>
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class='tuiles--img tuiles--img__standard'>
+                    <a href="#">
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class='tuiles-activites--img tuiles--img__standard'>
                     <div class='tuiles--legende_activite'>
                         <h2>Notre-Dame-de-la-Garde</h2>
                     </div>
+                    </a>
                 </article>
-
+            
+            
                 <article class='tuiles tuiles--activites'>
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" class='tuiles--img tuiles--img__standard'>
+                    <a href="#">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" class='tuiles-activites--img tuiles--img__standard'>
                     <div class='tuiles--legende_activite'>
                         <h2>Parc Longchamp</h2>
                     </div>
+                    </a>
                 </article>
             </div>
         </section>
@@ -207,19 +227,19 @@
         <footer>
             <div>
                 <h3>A propos</h3><br>
-                <a href="">Fonctionnement du site</a>
-                <a href="">Conditions générales de vente</a>
-                <a href="">Données et confidentialité</a>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Données et confidentialité</a>
             </div>
             <div>
                 <h3>Nos hébergements</h3><br>
-                <a href="">Charte de qualité</a>
-                <a href="">Soumettre votre hôtel</a>
+                <a href="#">Charte de qualité</a>
+                <a href="#">Soumettre votre hôtel</a>
             </div>
             <div>
                 <h3>Assistance</h3><br>
-                <a href="">Centre d'aide</a>
-                <a href="">Nous contacter</a>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
             </div>
         </footer>
 </body>
