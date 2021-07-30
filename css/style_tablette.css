@@ -11,6 +11,15 @@ body
 {
     padding:1rem;
 }
+.filtres
+{
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.filtres--btn
+{
+    margin: 9px 30px;
+}
 section
 {
     flex-direction: column;
@@ -49,12 +58,8 @@ section
 {
     height: 10rem;
     flex-basis: unset;
-    width: 80%;
+    width: 90%;
     justify-content: flex-end;
-}
-.tuiles--activites__grande
-{
-    flex-basis: unset;
 }
 .tuiles--img
 {
@@ -63,8 +68,7 @@ section
 }
 .tuiles-activites--img
 {
-    width: unset;
+    width: 650px;
     height: 150px;
     object-fit: cover;
 }
-/*Enlever les div autour des img

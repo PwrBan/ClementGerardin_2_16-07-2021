@@ -10,8 +10,8 @@ header
 }
 .onglet
     {
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 15px 0;
     }
 .onglet--btn-inscription
     {
@@ -27,7 +27,7 @@ header
     }
 .onglet--btn-hebergements
     {
-        order:3;
+        order: 3;
         flex-basis: 50%;
         border-bottom: 2px solid #F2F2F2;
         justify-content: center;
@@ -36,8 +36,52 @@ header
     {
         order: 1;
         flex-basis: 50%;
+        margin-top: 0;
     }
-
+.onglet:hover
+{
+    border-top: unset;
+    border-bottom: 2px solid #0065FC;  
+}
+.onglet--btn-inscription:hover
+{
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+.presentation
+{
+    margin: 3% 15%;
+}
+.presentation--text__bold
+{
+    font-size: 1.3rem;
+}
+.search--bar
+{
+    height: 2.5rem;
+    border-right: none;
+    width: 50%;
+}
+.search--btn
+{
+    display: none;
+}
+.search--btn__mobile
+{
+    display: block;
+    background: #0065FC;
+    height: 2.5rem;
+    border: none;
+    border-radius: 25%;
+    width: 2.5rem;
+    margin-left: -5px;
+}
+.fa-search
+{
+    background: none;
+    color: white;
+    padding: 0;
+}
 .filtres
     {
         flex-direction: column;
@@ -48,6 +92,14 @@ header
         justify-content: center;
         order: 2;
         margin: 0;
+    }
+    .tuiles--name
+    {
+        padding: 5px 0;
+    }
+    .tuiles--note
+    {
+        padding: 5px 0;
     }
 section
     {
@@ -64,7 +116,7 @@ section
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 0%;
+    height: auto;
     width: 95%;
     }
 footer
@@ -80,7 +132,7 @@ footer
     }
 .tuiles--activites
     {
-    width: 90%;
+    flex-basis: 150px;
     }
 .tuiles--img
 {
@@ -92,4 +144,16 @@ footer
 {
     width: 20rem;
     border: none;
+}
+.tuiles-activites--img
+{
+    height: 110px;
+}
+.fa-map-marker-alt
+{
+    color: black;
+    background: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    width: 1rem;
+    font-size: 1rem;
 }
