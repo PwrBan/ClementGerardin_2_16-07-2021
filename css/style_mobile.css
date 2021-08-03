@@ -9,22 +9,25 @@ header
     justify-content: flex-start;
 }
 .onglet
-    {
-        margin: 0;
-        padding: 15px 0;
-    }
+{
+    margin: 0;
+    padding: 15px 0;
+    display: flex;
+}
 .onglet--btn-inscription
-    {
-        order: 2;
-        flex-basis: 40%;
-    }
+{
+    order: 2;
+    flex-basis: 40%;
+    justify-content: flex-end;
+    padding: 0;
+}
 .onglet--btn-activites
-    {
-        order: 4;
-        flex-basis: 50%;
-        border-bottom: 2px solid #F2F2F2;
-        justify-content: center;
-    }
+{
+    order: 4;
+    flex-basis: 50%;
+    border-bottom: 2px solid #F2F2F2;
+    justify-content: center;
+}
 .onglet--btn-hebergements
     {
         order: 3;
@@ -32,6 +35,15 @@ header
         border-bottom: 2px solid #F2F2F2;
         justify-content: center;
     }
+.onglet a
+{
+    padding: 1rem;
+    justify-content: center;
+}
+.onglet a:hover
+{
+    border-top: unset;
+}
 .header--div_logo
     {
         order: 1;

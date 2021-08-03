@@ -54,20 +54,9 @@ header
     font-size: 0.7rem;
     margin-block-start: -0.5rem;
 }
-.onglet
-{
-    display: flex;
-    justify-content: flex-end;
-    padding: 2rem;
-    border-top: 2px solid transparent;
-}
 .onglet .onglet--lien-activites
 {
     color: grey;
-}
-.onglet--lien-activites:hover
-{
-    color: #0065FC;
 }
 .onglet--btn-inscription
 {
@@ -77,10 +66,15 @@ header
 {
     text-decoration: none; 
     color: #0065FC;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    border-top: 2px solid transparent;
 }
-.onglet:hover
+.onglet a:hover
 {
-    border-top: 2px solid #0065FC;  
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 .filtres
 {
@@ -135,6 +129,7 @@ header
     height: 32px;
     border-radius: 0 10px 10px 0;
     font-size: 0.7rem;
+    margin-left: -5px;
 }
 .search--btn__mobile
 {
@@ -349,6 +344,10 @@ section
     width: auto;
     font-size: x-small;
     padding: 0 4%;
+}
+.tuiles--legende_activite h2
+{
+    margin-block-start: 0;
 }
 footer
 {

@@ -7,9 +7,9 @@ body
     display: flex;
     flex-basis: 50%;
 }
-.onglet
+.onglet a
 {
-    padding:1rem;
+    padding:2rem 1rem;
 }
 .filtres
 {
@@ -28,6 +28,7 @@ section
 {
     order: 1;
     align-items: stretch;
+    margin: 0;
 }
 .tuiles__horizontal
 {
@@ -71,4 +72,8 @@ section
     width: 650px;
     height: 150px;
     object-fit: cover;
+}
+footer
+{
+    margin: 0;
 }
