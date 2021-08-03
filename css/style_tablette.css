@@ -2,10 +2,23 @@ body
 {
     margin: 0;
 }
-.header--div_logo
+.header__div-logo
 {
     display: flex;
     flex-basis: 50%;
+}
+.onglet a
+{
+    padding:2rem 1rem;
+}
+.filtres
+{
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.filtres__btn
+{
+    margin: 9px 30px;
 }
 section
 {
@@ -15,11 +28,12 @@ section
 {
     order: 1;
     align-items: stretch;
+    margin: 0;
 }
 .tuiles__horizontal
 {
     width: initial;
-    padding: 10px 0px 0px 10px;
+    padding: 7px 0px 7px 7px;
     margin: 1% 4%;
     justify-content: start;
 }
@@ -28,29 +42,43 @@ section
     order: 2;
     background: none;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 .activites
 {
     flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
 }
-.tuiles--activites
+.tuiles
+{
+    flex: auto;
+    width: auto;
+    margin: 2rem 0;
+}
+.tuiles__note
+{
+    padding: 1rem 0 0 0;
+}
+.tuiles-activites
 {
     height: 10rem;
     flex-basis: unset;
+    width: 90%;
+    justify-content: flex-end;
 }
-.tuiles--activites__grande
-{
-    flex-basis: unset;
-}
-.tuiles--img
+.tuiles__img
 {
     object-fit: cover;
     
 }
-.tuiles-activites--img
+.tuiles-activites__img
 {
-    width: unset;
+    width: 650px;
     height: 150px;
     object-fit: cover;
 }
-/*Enlever les div autour des img
+footer
+{
+    margin: 0;
+}

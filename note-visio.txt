@@ -1,0 +1,34 @@
+750/1000px flex a ameliore
+mettre import en html
+changer weight de font 
+en rajoutant d'autre weight via google 
+justify-content center
+border onglet invicible pour eviter decalage
+augmenter epaisseur
+s'inscrire plus epais
+padding tuiles names/prix, etoiles
+popular, 
+gradius images/toiles
+marges filtres
+placeholder marseille,france
+RAjouter hauteur legende vieux port 
+fixe hauteur image
+marge bottom footer
+mettre en double quote tout
+espace inutile
+padding verticale onglet 
+padding hebergements
+AFFICHER Plus en lien
+rajouter des hover sur les liens 
+cursors: pointor 
+icone i englobe par div
+pour avoir un rond border-radius:100%
+espacement icone texte
+hauteur
+filtres augmenter taille
+chiffres rond et ajustement avec padding
+nom commit = explication des changements
+
+
+
+
