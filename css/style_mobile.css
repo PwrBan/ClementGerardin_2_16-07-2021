@@ -14,21 +14,21 @@ header
     padding: 15px 0;
     display: flex;
 }
-.onglet--btn-inscription
+.onglet__btn-inscription
 {
     order: 2;
     flex-basis: 40%;
     justify-content: flex-end;
     padding: 0;
 }
-.onglet--btn-activites
+.onglet__btn-activites
 {
     order: 4;
     flex-basis: 50%;
     border-bottom: 2px solid #F2F2F2;
     justify-content: center;
 }
-.onglet--btn-hebergements
+.onglet__btn-hebergements
     {
         order: 3;
         flex-basis: 50%;
@@ -44,7 +44,7 @@ header
 {
     border-top: unset;
 }
-.header--div_logo
+.header__div-logo
     {
         order: 1;
         flex-basis: 50%;
@@ -55,7 +55,7 @@ header
     border-top: unset;
     border-bottom: 2px solid #0065FC;  
 }
-.onglet--btn-inscription:hover
+.onglet__btn-inscription:hover
 {
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
@@ -64,21 +64,21 @@ header
 {
     margin: 3% 15%;
 }
-.presentation--text__bold
+.presentation__text--bold
 {
     font-size: 1.3rem;
 }
-.search--bar
+.search__bar
 {
     height: 2.5rem;
     border-right: none;
     width: 50%;
 }
-.search--btn
+.search__btn
 {
     display: none;
 }
-.search--btn__mobile
+.search__btn--mobile
 {
     display: block;
     background: #0065FC;
@@ -95,58 +95,58 @@ header
     padding: 0;
 }
 .filtres
-    {
-        flex-direction: column;
-    }
+{
+    flex-direction: column;
+}
 .hebergements
-    {
-        background: none;
-        justify-content: center;
-        order: 2;
-        margin: 0;
-    }
-    .tuiles--name
-    {
-        padding: 5px 0;
-    }
-    .tuiles--note
-    {
-        padding: 5px 0;
-    }
+{
+    background: none;
+    justify-content: center;
+    order: 2;
+    margin: 0;
+}
+.tuiles__name
+{
+    padding: 5px 0;
+}
+.tuiles--note
+{
+    padding: 5px 0;
+}
 section
-    {
-        flex-direction: column;
-    }
+{
+    flex-direction: column;
+}
 .popular
-    {
-        border-radius: 0;
-        order: 1;
-        margin: 0;
-    }
+{
+    border-radius: 0;
+    order: 1;
+    margin: 0;
+}
 .activites
-    {
+{
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     height: auto;
     width: 95%;
-    }
+}
 footer
-    {
+{
     flex-direction: column;
     margin: 0;
-    }
+}
 .search
-    {
+{
     display: flex;
     justify-content: center;
     flex-basis: 80%;
-    }
-.tuiles--activites
-    {
+}
+.tuiles-activites
+{
     flex-basis: 150px;
-    }
-.tuiles--img
+}
+.tuiles__img
 {
     width: auto;
     height: 10em;
@@ -157,7 +157,7 @@ footer
     width: 20rem;
     border: none;
 }
-.tuiles-activites--img
+.tuiles-activites__img
 {
     height: 110px;
 }

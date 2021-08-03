@@ -33,32 +33,32 @@ header
     flex-direction: column;
     flex-basis: 100%;
 }
-.header--div_logo
+.header__div-logo
 {
     display: flex;
     flex-basis: 70%;
     margin-top: 1rem;
 }
-.header--logo
+.header__logo
 {
     width: 100px;
 }
-.presentation--text__bold
+.presentation__text--bold
 {
     font-size: x-large;
     margin-inline-end: 0em;
 
 }
-.presentation--text
+.presentation__text
 {
     font-size: 0.7rem;
     margin-block-start: -0.5rem;
 }
-.onglet .onglet--lien-activites
+.onglet .onglet__lien-activites
 {
     color: grey;
 }
-.onglet--btn-inscription
+.onglet__btn-inscription
 {
     font-weight: 600;
 }
@@ -82,7 +82,7 @@ header
     align-items: baseline;
     margin-top: 20px;
 }
-.filtres--btn
+.filtres__btn
 {
     font-weight: 600;
     padding: 0 13px 0 0;
@@ -109,19 +109,18 @@ header
 .search
 {
     padding: 1rem 0;
-    
 }
-.search--bar
+.search__bar
 {
     border: 1px solid #F2F2F2;
     height: 32px;
 }
-.search--bar::placeholder
+.search__bar::placeholder
 {
     font-weight: 600;
     color: black;
 }
-.search--btn
+.search__btn
 {
     background: #0065FC;
     color: white;
@@ -131,7 +130,7 @@ header
     font-size: 0.7rem;
     margin-left: -5px;
 }
-.search--btn__mobile
+.search__btn--mobile
 {
     display: none;
 }
@@ -160,12 +159,14 @@ header
     flex-basis: 75%;
     padding: 0 2rem;
 }
-.hebergements--titre
+/*
+.hebergements__titre
 {
     width: 100%;
     padding-left: 30px;
 }
-.hebergements--lien
+*/
+.hebergements__lien
 {
     width: 100%;
 }
@@ -189,25 +190,25 @@ header
 {
     filter: brightness(50%);
 }
-.tuiles--activites a:hover > img
+.tuiles-activites a:hover > img
 {
     filter: brightness(50%);
 }
-.tuiles--name
+.tuiles__name
 {
     margin-block-end: unset;
     margin-block-start: unset;
     font-size: 1rem;
     padding: 10px 0;
 }
-.tuiles--img
+.tuiles__img
 {
     
     border-radius: 15px 15px 0 0;
     height: 140px;
     object-fit: cover;
 }
-.tuiles--legende
+.tuiles__legende
 {
     display: flex;
     flex-direction: column;
@@ -223,7 +224,7 @@ header
     padding: 0 0;
     margin: 0; 
 }
-.tuiles--note
+.tuiles__note
 {
     display: flex;
     padding: 5% 0;
@@ -234,7 +235,7 @@ section
     justify-content: space-between;
     
 }
-.section--name
+.section__name
 {
     display: flex;
     width: 100%;
@@ -270,7 +271,7 @@ section
     margin: 10% 0%;
     
 }
-.tuiles--img__horizontal
+.tuiles-horizontal__img
 {
     height: auto;
     width: 120px;
@@ -292,52 +293,52 @@ section
     flex-wrap: wrap;
     height: 420px;
 }
-.activites--titre
+.activites__titre
 {
     display: flex;
     flex-basis: 100%;
 }
-.tuiles--activites
+.tuiles-activites
 {
     width: 22%;
     flex-basis: 40%;
     overflow: hidden;
     box-shadow: 1px 1px 6px #F2F2F2;
 }
-.tuiles--activites__grande
+.tuiles-activites--grande
 {
     flex-basis: 100%;
 }
-.tuiles-activites--img
+.tuiles-activites__img
 {
     width: 318px;
     object-fit: cover;
 }
-.tuiles--img__grande
+.tuiles__img--grande
 {
     height: 340px;
 }
-.tuiles--activites__moyenne
+.tuiles-activites--moyenne
 { 
     flex-basis: 45%;
 }
-.tuiles--img__moyenne
+.tuiles__img--moyenne
 {
     height: 30%;
 }
-.tuiles--activites__petite
+.tuiles-activites--petite
 {
     flex-basis: 35%;
 }
-.tuiles--img__petite
+.tuiles__img--petite
 {
     height: 45%;
 }
-.tuiles--img__standard
+.tuiles__img--standard
 {
     height: 135px;
 }
-.tuiles--legende_activite
+.tuiles-activites__legende
 {
     display: flex;
     align-items: center;
@@ -345,7 +346,7 @@ section
     font-size: x-small;
     padding: 0 4%;
 }
-.tuiles--legende_activite h2
+.tuiles-activites__legende h2
 {
     margin-block-start: 0;
 }

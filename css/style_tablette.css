@@ -2,7 +2,7 @@ body
 {
     margin: 0;
 }
-.header--div_logo
+.header__div-logo
 {
     display: flex;
     flex-basis: 50%;
@@ -16,7 +16,7 @@ body
     margin: 15px;
     flex-wrap: wrap;
 }
-.filtres--btn
+.filtres__btn
 {
     margin: 9px 30px;
 }
@@ -54,20 +54,25 @@ section
 {
     flex: auto;
     width: auto;
+    margin: 2rem 0;
 }
-.tuiles--activites
+.tuiles__note
+{
+    padding: 1rem 0 0 0;
+}
+.tuiles-activites
 {
     height: 10rem;
     flex-basis: unset;
     width: 90%;
     justify-content: flex-end;
 }
-.tuiles--img
+.tuiles__img
 {
     object-fit: cover;
     
 }
-.tuiles-activites--img
+.tuiles-activites__img
 {
     width: 650px;
     height: 150px;
