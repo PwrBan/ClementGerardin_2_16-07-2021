@@ -11,7 +11,6 @@ header
 .onglet
 {
     margin: 0;
-    padding: 15px 0;
     display: flex;
 }
 .onglet__btn-inscription
@@ -42,13 +41,13 @@ header
 }
 .onglet a:hover
 {
-    border-top: unset;
+    border-top: 2px solid transparent;
 }
 .header__div-logo
     {
         order: 1;
         flex-basis: 50%;
-        margin-top: 0;
+        margin: 0 5%;
     }
 .onglet:hover
 {
@@ -98,6 +97,10 @@ header
 {
     flex-direction: column;
 }
+.filtres strong
+{
+    margin: 1rem 5%;
+}
 .hebergements
 {
     background: none;
@@ -131,16 +134,15 @@ section
     height: auto;
     width: 95%;
 }
-footer
-{
-    flex-direction: column;
-    margin: 0;
-}
 .search
 {
     display: flex;
     justify-content: center;
     flex-basis: 80%;
+}
+.info__icone
+{
+    margin: 0 1rem 0 5%;
 }
 .tuiles-activites
 {
@@ -168,4 +170,10 @@ footer
     border-radius: 10px 0 0 10px;
     width: 1rem;
     font-size: 1rem;
+}
+footer
+{
+    flex-direction: column;
+    margin: 0;
+    padding: 0 5%;
 }
