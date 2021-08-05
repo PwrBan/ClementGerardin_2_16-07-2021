@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="(max-width: 427px)" href="css/style_mobile.css">
     <link rel="stylesheet" media="(min-width:427px) and (max-width: 769px)" href="css/style_tablette.css">
+    <link rel="stylesheet" media="(min-width: 770px) and (max-width: 1025px)" href="css/style_laptop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
@@ -17,9 +18,9 @@
     <body>
         <header>
             <div class="header__div-logo"><img src="images/logo/Reservia.svg" alt="Reservia-logo" class="header__logo"></div>  
-            <div class="onglet onglet__btn-hebergements"><a href="#">Hébergements</a></div> 
+            <div class="onglet onglet__btn-hebergements"><a href="#">Hébergements</a></div>
             <div class="onglet onglet__btn-activites"><a href="#" class="onglet__lien-activites">Activités</a></div>
-            <div class="onglet onglet__btn-inscription"><a href="#">S'inscrire</a></div>                      
+            <div class="onglet onglet__btn-inscription"><a href="#" id="onglet__lien-inscription">S'inscrire</a></div>                      
         </header> 
 
                 <div class="presentation">
@@ -39,16 +40,29 @@
                     </div>
                     <div class="filtres">
                         <strong>Filtres</strong>
-                            <button class="filtres__btn"><i class="fas fa-money-bill-wave-alt"></i> Economique</button>
-                            <button class="filtres__btn"><i class="fas fa-child "></i> Familial</button>
-                            <button class="filtres__btn"><i class="fas fa-heart  "></i> Romantique</button>
-                            <button class="filtres__btn"><i class="fas fa-dog "></i> Animaux autorisés</button>
+                            <button class="filtres__btn">
+                                <div class="filtres__icon"><i class="fas fa-money-bill-wave-alt"></i></div>
+                                Economique
+                            </button>
+                            <button class="filtres__btn">
+                                <div class="filtres__icon"><i class="fas fa-child "></i></div>
+                                 Familial
+                            </button>
+                            <button class="filtres__btn">
+                                <div class="filtres__icon"><i class="fas fa-heart  "></i></div>
+                                Romantique
+                            </button>
+                            <button class="filtres__btn">
+                                <div class="filtres__icon"><i class="fas fa-dog"></i></div>
+                                Animaux autorisés
+                            </button>
                     </div>        
                 </nav>
               
         
                 <div class="info">
-                    <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div class='info__icone'><i class="fas fa-info"></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
         
         <section>
@@ -60,7 +74,7 @@
                         <div class="tuiles__legende">
                             <h2 class="tuiles__name">Auberge de la cannebiere</h2>
                             Nuit a partir de 25€
-                            <div class="tuiles__note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="tuiles__note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i></div>
                         </div>
                     </article>
                 </a>
@@ -80,7 +94,7 @@
                         <div class="tuiles__legende">
                             <h2 class="tuiles__name">Hôtel Les mouettes</h2>
                             Nuit a partir de 76€
-                            <div class="tuiles__note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="tuiles__note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i></div>
                         </div>
                     </article>
                 </a>
@@ -90,7 +104,7 @@
                         <div class="tuiles__legende">
                             <h2 class="tuiles__name">Hôtel de la mer</h2>
                             Nuit a partir de 46€
-                            <div class="tuiles__note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="tuiles__note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i><i class="fas fa-star empty"></i></div>
                         </div>
                     </article>
                 </a>
@@ -100,7 +114,7 @@
                         <div class="tuiles__legende">
                             <h2 class="tuiles__name">Auberge Le Panier</h2>
                             Nuit a partir de 23€
-                            <div class="tuiles__note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="tuiles__note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i></div>
                         </div>
                     </article>
                 </a> 
@@ -141,7 +155,7 @@
                                 <h2 class="tuiles__name">Au coeur de l'eau Chambres d'hôtes</h2>
                             <em>Nuit a partir de 71€</em>
                             </div>
-                            <div class="tuiles__note tuiles__note--horizontal"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="tuiles__note tuiles__note--horizontal"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i></div>
                         </div>
                         
                     </article>
@@ -154,7 +168,7 @@
                             <h2 class="tuiles__name">Hôtel Tout bleu et Blanc</h2>
                             <em>Nuit a partir de 68€</em>
                         </div>
-                            <div class="tuiles__note tuiles__note--horizontal"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="tuiles__note tuiles__note--horizontal"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i></div>
                         </div>    
                     </article>
                 </a>
@@ -190,7 +204,7 @@
                     <a href="#">
                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du frioul" class="tuiles-activites__img tuiles__img--petite">
                     <div class="tuiles-activites__legende">
-                        <h2>îles du Frioul</h2>
+                        <h2>Îles du Frioul</h2>
                     </div>
                     </a>
                 </article>

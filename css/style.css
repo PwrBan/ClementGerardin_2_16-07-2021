@@ -11,10 +11,6 @@ a
     text-decoration: none;
     color: initial;
 }
-a:hover
-{
-    color: #0065FC;
-}
 i:hover
 {
     color: #0065FC;
@@ -54,24 +50,21 @@ header
     font-size: 0.7rem;
     margin-block-start: -0.5rem;
 }
-.onglet .onglet__lien-activites
-{
-    color: grey;
-}
-.onglet__btn-inscription
+#onglet__lien-inscription
 {
     font-weight: 600;
+    color: #0065FC;
 }
 .onglet a
 {
     text-decoration: none; 
-    color: #0065FC;
+    color: grey;
     display: flex;
     justify-content: flex-end;
     padding: 2rem;
     border-top: 2px solid transparent;
 }
-.onglet a:hover
+.onglet a:active
 {
     border-top: 2px solid #0065FC;
     color: #0065FC;
@@ -84,12 +77,34 @@ header
 }
 .filtres__btn
 {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     padding: 0 13px 0 0;
     background: none;
     border: 3px solid #F2F2F2;
     border-radius: 80px;
     margin: 0 15px;
+    height:2rem;
+    cursor: pointer;
+}
+.filtres__btn:active
+{
+    background: #0065FC;
+    color: white;
+}
+.filtres__icon
+{
+    display: flex;
+    margin:0 1rem 0 -5px;
+    height: 15px;
+    width: 15px;
+    color: #0065FC;
+    padding: 0.5rem;
+    background: #DEEBFF;
+    border-radius: 80px;
+    justify-content: center;
+    align-items: center;
 }
 .fas
 {
@@ -113,10 +128,11 @@ header
 .search__bar
 {
     border: 1px solid #F2F2F2;
-    height: 32px;
+    height: 1.9rem;
 }
 .search__bar::placeholder
 {
+    padding-left: .5rem;
     font-weight: 600;
     color: black;
 }
@@ -141,13 +157,20 @@ header
     font-size: 0.8rem;
     margin-top: 30px;
 }
+.info__icone
+{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    margin: 0 1rem 0 0;
+}
 .fa-info
 {
     background: none;
     color: #0065FC;
-    border: 1px solid #F2F2F2;
-    border-radius: 10px;
-    padding: 8px;
 }
 .hebergements
 {
@@ -159,16 +182,14 @@ header
     flex-basis: 75%;
     padding: 0 2rem;
 }
-/*
-.hebergements__titre
-{
-    width: 100%;
-    padding-left: 30px;
-}
-*/
 .hebergements__lien
 {
     width: 100%;
+    padding-bottom: 1rem;
+}
+.hebergements__lien a:hover
+{
+    color: #0065FC;
 }
 .tuiles
 {
@@ -182,13 +203,25 @@ header
     width: 280px;
     margin: 1rem 10px;
 }
+.tuiles:hover
+{
+    color: #0065FC;
+}
 .tuiles:hover > img
 {
     filter: brightness(50%);
 }
+.tuiles__horizontal:hover
+{
+    color: #0065FC;
+}
 .tuiles__horizontal:hover > img
 {
     filter: brightness(50%);
+}
+.tuiles-activites a:hover
+{
+    color: #0065FC;
 }
 .tuiles-activites a:hover > img
 {
@@ -223,6 +256,10 @@ header
     background: none;
     padding: 0 0;
     margin: 0; 
+}
+.empty
+{
+    color: grey;
 }
 .tuiles__note
 {
@@ -311,7 +348,7 @@ section
 }
 .tuiles-activites__img
 {
-    width: 318px;
+    width: 100%;
     object-fit: cover;
 }
 .tuiles__img--grande
@@ -344,7 +381,7 @@ section
     align-items: center;
     width: auto;
     font-size: x-small;
-    padding: 0 4%;
+    padding: 5px 4%;
 }
 .tuiles-activites__legende h2
 {
@@ -362,4 +399,8 @@ footer div
 {
     display: flex;
     flex-direction: column;
+}
+footer a:hover
+{
+    color: #0065FC;
 }
