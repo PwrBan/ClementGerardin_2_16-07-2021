@@ -1,0 +1,24 @@
+section
+{
+    flex-direction: column;
+}
+.hebergements
+{
+    margin: 5% 0;
+}
+.popular
+{
+    margin: 0;
+}
+.tuiles__horizontal
+{
+    margin: 5% 0;
+}
+.tuiles__img--moyenne
+{
+    height: 45%;
+}
+.tuiles__img--petite
+{
+    height: 65%;
+}
