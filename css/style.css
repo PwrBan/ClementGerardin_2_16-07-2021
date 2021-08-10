@@ -187,6 +187,7 @@ header
 .hebergements__lien
 {
     width: 100%;
+    font-weight: bold;
     padding-bottom: 1rem;
 }
 .hebergements__lien a:hover
