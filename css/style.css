@@ -119,16 +119,18 @@ header
     color: black;
     background: #F2F2F2;
     border-radius: 10px 0 0 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10.5px;
 }
 .search
 {
     padding: 1rem 0;
+    display: flex;
+    align-items: center;
 }
 .search__bar
 {
-    border: 1px solid #F2F2F2;
-    height: 1.9rem;
+    border: 2px solid #F2F2F2;
+    height: 2rem;
 }
 .search__bar::placeholder
 {
@@ -140,8 +142,8 @@ header
 {
     background: #0065FC;
     color: white;
-    border: none;
-    height: 32px;
+    border: 2px solid #0065FC;
+    height: 2rem;
     border-radius: 0 10px 10px 0;
     font-size: 0.7rem;
     margin-left: -5px;
