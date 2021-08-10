@@ -147,6 +147,7 @@ header
     border-radius: 0 10px 10px 0;
     font-size: 0.7rem;
     margin-left: -5px;
+    cursor: pointer;
 }
 .search__btn--mobile
 {
@@ -235,7 +236,7 @@ header
     margin-block-end: unset;
     margin-block-start: unset;
     font-size: 1rem;
-    padding: 10px 0;
+    padding: 6px 0;
 }
 .tuiles__img
 {
@@ -298,17 +299,18 @@ section
     border-radius: 15px;
     padding: 1rem 2rem;
     margin: 0 0rem 0 2rem;
-    justify-content: flex-start;
+    justify-content: space-evenly
 }
 .tuiles__horizontal
 {
     display: flex;
     background: white;
     border-radius: 15px;
-    height: 130px;
+    height: 140px;
     width: auto;
     box-shadow: 1px 1px 6px #b0b0b0;
     margin: 10% 0%;
+    padding: 3px;
     
 }
 .tuiles-horizontal__img
